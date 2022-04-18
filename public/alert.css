@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body{
+
+    background-image: url("https://nxweb.com/pic/6.png");
+    background-size: auto;
+  
+  }
+
+input[type="text"] {
+    text-align:left;
+    font-family: 'Lato';
+  }
