@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const hostname = 'nxweb.xyz';
+const hostname = 'localhost';
 const port = 80;
 const server = http.createServer((req, res) => {
     console.log('Request for ' + req.url + ' by method ' + req.method);
@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
         else if (req.url == '//') fileUrl = '/index.html';
              else fileUrl = req.url;
 
-        var filePath = path.resolve('./nxweb.xyz/public' + fileUrl);
+        var filePath = path.resolve('./public' + fileUrl);
 
         if (!fs.existsSync(filePath)) {
            res.statusCode = 404;
